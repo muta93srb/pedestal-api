@@ -13,3 +13,5 @@ pom.xml.asc
 /example/logs
 /example/target
 /example/.nrepl-port
+.idea
+/.idea
