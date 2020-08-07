@@ -18,6 +18,6 @@
                  [org.slf4j/jul-to-slf4j "1.7.30"]
                  [org.slf4j/log4j-over-slf4j "1.7.30"]]
   :plugins [[s3-wagon-private "1.3.4"]]
-  :repositories [["muta93srb-maven" {:url "s3p://muta93srb-maven/releases/"
+  :repositories [["muta93srb-maven" {:url "s3p://muta93srb-maven/clojure/repos"
                                      :username :env/AWS_ACCESS_KEY_ID
                                      :passphrase :env/AWS_SECRET_ACCESS_KEY}]])
