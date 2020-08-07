@@ -30,6 +30,9 @@ jobs:
 
       - name: Leiningen deploy
         run: lein deploy muta93srb-maven
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
 
 

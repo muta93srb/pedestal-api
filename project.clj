@@ -19,4 +19,5 @@
                  [org.slf4j/log4j-over-slf4j "1.7.30"]]
   :plugins [[s3-wagon-private "1.3.4"]]
   :repositories [["muta93srb-maven" {:url "s3p://muta93srb-maven/releases/"
-                                     :creds :gpg}]])
+                                     :username :env/AWS_ACCESS_KEY_ID
+                                     :passphrase :env/AWS_SECRET_ACCESS_KEY}]])
