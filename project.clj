@@ -12,12 +12,7 @@
                  [org.clojure/tools.namespace "1.0.0"]
                  [clj-http "3.10.1"]
 
-                 [ch.qos.logback/logback-classic "1.2.3"
-                  :exclusions [org.slf4j/slf4j-api]]
+                 [ch.qos.logback/logback-classic "1.2.3" :exclusions [org.slf4j/slf4j-api]]
                  [org.slf4j/jcl-over-slf4j "1.7.30"]
                  [org.slf4j/jul-to-slf4j "1.7.30"]
-                 [org.slf4j/log4j-over-slf4j "1.7.30"]]
-  :plugins [[s3-wagon-private "1.3.4"]]
-  :repositories [["muta93srb-maven" {:url "s3p://muta93srb-maven/clojure/repos"
-                                     :username :env/AWS_ACCESS_KEY_ID
-                                     :passphrase :env/AWS_SECRET_ACCESS_KEY}]])
+                 [org.slf4j/log4j-over-slf4j "1.7.30"]])
